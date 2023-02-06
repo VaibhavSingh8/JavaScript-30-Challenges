@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update CSS variables</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h2>Update CSS variables with <span class="highlight">JavaScript</span></h2>
+    </header>
+    <section class="labels">
+        <label for="spacing">Spacing:</label>
+        <input type="range" name="spacing" min="0" max="400" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" min="0" max="20" value="0" data-sizing="px">
+
+        <label for="border-radius">Border Radius:</label>
+        <input type="range" name="border-radius" min="0" max="200" value="5" data-sizing="px">
+
+        <label for="pick-color">Background Color</label>
+        <input type="color" name="pick-color" value="#eab6aa">
+    </section>
+    <section>
+        <img src="background.jpg" class="image">
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
